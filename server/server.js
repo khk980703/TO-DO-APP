@@ -17,5 +17,8 @@ app.get('/todos/:userEmail', async (req, res) => {
     }
 })
 
+app.get('/ping', (req, res) => {
+    res.json('pong')
+})
 
 app.listen(PORT, ( ) => console.log(`Server running on PORT ${PORT}`))
